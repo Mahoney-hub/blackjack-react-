@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import {getCardCount} from './utils/utils';
 
 interface IImages {
     png: string
@@ -60,6 +61,8 @@ const App = () => {
             const response = await axios.get<ICardObj>(queryString)
             console.log(response.data)
             const newCard: string = response.data.cards[0].images.png
+            setCount(getCardCount(response.data.cards[0].value))
+            console.log(response.data.cards[0].value)
             setCard(newCard)
             setCards([...cards, newCard])
         } catch (e) {
