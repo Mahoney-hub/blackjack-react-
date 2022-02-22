@@ -96,11 +96,16 @@ const App = () => {
             {/*    </div>*/}
             {/*</div>*/}
             <div className={'block block--small'}>
-                <div className={'button'}>hit</div>
+                <div className={'button'} onClick={() => getCard(deckID)}>hit</div>
+                <div className={'button'} onClick={() => clearField()}>clear</div>
             </div>
             <div className={'block block--large'}>
-                <div className={'field'}></div>
-                <div className={'field'}></div>
+                <div className={'field'}>
+
+                </div>
+                <div className={'field'}>
+                    {componentCards}
+                </div>
             </div>
             <div className={'block block--small'}>
                 <div className={'info'}>
