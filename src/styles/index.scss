@@ -5,7 +5,8 @@
 }
 
 body {
-  background: #2c5a39;
+  background: rgb(20,30,48);
+  background: linear-gradient(0deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
 }
 
 .app {
@@ -37,7 +38,7 @@ body {
   width: 120px;
   height: 60px;
   margin: 20px 0;
-  background: #4caf50;
+  background: #212121;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -49,7 +50,7 @@ body {
   transition: transform 0.2s linear;
 
   &:hover {
-    background: #388e3c;
+    background: #b71c1c;
   }
 
   &:active {
@@ -58,14 +59,16 @@ body {
 }
 
 .info {
-  width: 150px;
+  width: 190px;
   height: 100px;
   border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 30px;
-  color: whitesmoke;
+  font-size: 26px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
 
   div {
     width: 60px;
@@ -74,7 +77,11 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: teal;
+    background: #e1f5fe;
+  }
+
+  span {
+    color: #e1f5fe;
   }
 }
 

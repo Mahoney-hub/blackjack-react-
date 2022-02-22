@@ -82,19 +82,6 @@ const App = () => {
 
     return (
         <div className={'app'}>
-            {/*<div className={'field'}>*/}
-            {/*    <Paper className={'block'}>*/}
-            {/*        {componentCards}*/}
-            {/*    </Paper>*/}
-            {/*    <ButtonGroup variant="contained" fullWidth>*/}
-            {/*        <Button onClick={() => getCard(deckID)}>Еще</Button>*/}
-            {/*        <Button onClick={() => clearField()}>Сброс</Button>*/}
-            {/*        <Button>Three</Button>*/}
-            {/*    </ButtonGroup>*/}
-            {/*    <div className={'count'}>*/}
-            {/*        {componentResult}*/}
-            {/*    </div>*/}
-            {/*</div>*/}
             <div className={'block block--small'}>
                 <div className={'button'} onClick={() => getCard(deckID)}>hit</div>
                 <div className={'button'} onClick={() => clearField()}>clear</div>
@@ -114,7 +101,7 @@ const App = () => {
                 </div>
                 <div className={'button'}>stand</div>
                 <div className={'info'}>
-                    <div>0</div>
+                    <div>{count}</div>
                     <span>Player</span>
                 </div>
             </div>
