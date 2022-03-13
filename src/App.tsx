@@ -32,9 +32,14 @@ interface IDeck {
 
 const App = () => {
     // BLL Card
+    // Состояния для игрока
     const [card, setCard] = useState<string | undefined>(undefined) // текущая карта
     const [cards, setCards] = useState<string[]>([]) // массив карт на поле
     const [count, setCount] = useState<number>(0) // счет
+    // Состояния для диллера
+    const [cardDealer, setCardDealer] = useState<string | undefined>(undefined)
+    const [cardsDealer, setCardsDealer] = useState<string[]>([]) // массив карт на поле
+    const [countDealer, setCountDealer] = useState<number>(0) // счет
     // BLL Deck
     const [cardBalance, setCardBalance] = useState<number>(52) // остаток карт в колоде
     const [deckID, setDeckID] = useState<string>('') // id колоды карт для api
